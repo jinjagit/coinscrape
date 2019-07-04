@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CoinScrape</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" media="screen" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="main">
+        <div id="lbox">
+          <h3>current:</h3>
+          <h3>24 hrs:</h3>
+          <h3>1 week:</h3>
+          <h3>1 year:</h3>
+        </div>
+        <div id="rbox">
+          <h3 class="right"><%= @current %></h3>
+          <% @day.include?("+") ? color = 'green' : color = 'red' %>
+          <h3 class="right" style="color:<%= color %>;"><%= "#{@day}%" %></h3>
+          <% @week.include?("+") ? color = 'green' : color = 'red' %>
+          <h3 class="right" style="color:<%= color %>;"><%= "#{@week}%" %></h3>
+          <% @year.include?("+") ? color = 'green' : color = 'red' %>
+          <h3 class="right" style="color:<%= color %>;"><%= "#{@year}%" %></h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

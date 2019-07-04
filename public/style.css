@@ -1,0 +1,38 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Ubuntu Mono', monospace;
+  color: #ccc;
+  background-color: #151515;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  width: 400px;
+}
+
+#lbox {
+  width: 50%;
+  float: left;
+}
+
+#rbox {
+  width: 50%;
+  margin-left: 50%;
+}
+
+.right {
+  text-align: right;
+}
